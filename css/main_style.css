@@ -1,0 +1,34 @@
+/* main style */
+#sidebar{background:#eaeaea;}
+#sidebar > ul > li.active > a{
+	background:#404040 !important;
+}
+#sidebar > ul{margin:0 !important;}
+.content-block{
+	min-height:500px;
+	padding:30px;
+
+}
+.profile-admin{
+	width:100%;
+	display:block;
+	height:auto;
+	clear:both;
+}
+.profile-admin  .photo{
+	margin:40px 20px 20px 20px;
+	width:auto;
+	height:200px;
+	text-align:center;
+	background:#fff;
+}
+.profile-admin  .photo img{
+	width:100%;
+	height:100%;
+}
+.profile-admin .detail{
+	color:#404040;
+	font-size:14px;
+	padding:10px 20px;
+	line-height:1.7em;
+}

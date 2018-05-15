@@ -1,0 +1,232 @@
+@font-face
+{
+	font-family: 'lato light';
+	src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face
+{
+	font-family: 'lato-Regular';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+body{
+	background-size:cover !important;
+	
+	padding:0 !important;
+	width:100% !important;
+	font-family:'Lato bold';
+	font-size:14px;
+	margin:0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.vbody{
+	background-color: #fff;
+	margin: 0;
+	left:0;
+	right:250px;
+	padding: 0;
+	z-index:0;
+	position: relative;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.vbody a{
+	display: inline-block;
+	color: #000;
+	background: #F7F7F7;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 5px;
+}
+.swipe{
+	width:250px;
+	height:auto;
+	background:#6CCAFF;
+	position:absolute;
+	z-index:9999;
+	top:0;
+	right:0;
+}
+.swipe ul{margin:0;padding:0;}
+.swipe ul li{
+	display:block;
+	list-style:none;
+	width:100%;
+	text-align:left;
+}
+.swipe ul li.parent ul{
+	display:none;
+}
+.swipe ul li.parent.active ul{ display:block; }
+.swipe ul li a{
+	display:block;
+	padding:15px 10px 15px 20px;
+	text-decoration:none;
+	border-bottom:1px solid #3AB8FF;
+	color:#fff;	
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	     -o-transition: all 0.3s ease-out;
+	        transition: all 0.3s ease-out;
+}
+.swipe ul li  ul li a{background-color:#3AB8FF;}
+.swipe ul li a i{margin-right:20px;}
+.swipe ul li:not(.parent):hover a,
+.swipe ul li.current a{background-color:#1B1B1B;}
+.tabs{
+	width:auto;
+	height:50px;
+	margin:0 auto;
+	padding:10px 100px;
+	background:#000;
+	border-bottom:2px solid #000;
+
+}
+.tabs a{text-transform:uppercase;color:#fff;background:none;}
+.tabs ul{padding:0;margin:0;}
+.tabs ul li{
+	display:inline-block;
+	list-style:none;
+}
+.tabs ul li a{
+	display:inline-block;
+	float:left;
+	font-size:14px;
+	margin:0 10px;
+	width:auto;
+	background:#3AB8FF;
+	border-radius:5px;
+	padding:5px 10px;
+	color:#fff;
+	font-size:13px;
+	text-decoration:none;
+	height:20px;
+}
+.tabs ul li a i{margin-right:10px;}
+.tabs ul li a:hover{background:#1B1B1B;}
+.content{
+	position:relative;
+	width:600px;
+	margin:20px auto 20px 100px;
+	border-bottom:1px dashed #ccc;
+}
+
+.content table{width:100%;padding:0;}
+ .txt-field{
+	padding:10px;
+	margin:10px 0px;
+	width:auto;
+	min-width:300px;
+	font-size:14px;
+	color :#333;
+	border:1px solid #d5d5d5;
+	font-family:'Lato';
+	
+}
+ label{
+	font-size: 14px;
+	font-style: italic;
+
+	
+}
+ .txt-field:focus{
+	border-color:#16D6FF;
+	outline:none;
+	
+}
+ .buttone{
+	background-color:#16D6FF;
+	border:none;
+	width:auto;
+	padding:10px;
+	color:#fff;
+	font-size:14px;
+	cursor:pointer;
+}
+.content table{padding:o;margin:10px 0;}
+.content table tr th{
+	text-transform:uppercase;
+	border-bottom:1px dashed #3AB8FF;
+	border-top:1px dashed #3AB8FF;
+	border-right:1px dashed #3AB8FF;
+	color:#3AB8FF;
+	padding:10px 5px;
+}
+.content table tr td{
+	border-bottom:1px dashed #ccc;
+	border-right:1px dashed #ccc;
+	text-align:center;
+	cursor:pointer;
+}
+.content table tr:hover td{background:#F1F1F1;}
+.content .fa-trash-o,
+.content .fa-pencil{
+	color:#000;
+	cursor:pointer;
+}
+.content .fa-trash-o:hover{color:rgb(255, 11, 80);}
+.content .fa-pencil:hover{color:rgb(27, 160, 43);}
+.overlay{
+	background:rgba(255,255,255,0.9);
+	width:100%;
+	height:100%;
+	left:0;
+	right:0;
+	position:fixed;
+	z-index:1000;
+	display:none;
+}
+
+.text{
+	background:#fff;
+	width: 50%;
+	height: auto;
+	margin: 10% auto;
+	color: #000;
+	font-size:20px;
+	font-weight:bold;
+	text-align: center;
+	padding: 10px;
+}
+.text .fa{
+	font-size:30px;
+	margin:10px;
+}
+.fa-times{color:red;}
+.fa-check{color:green;}
+.welcome{
+	text-align:center;
+	width:100%;
+	margin:0 auto;
+}
+.admin-bg{
+	width:100%;
+	height:400px;
+	background:url(../images/admin-bg.png) center no-repeat;
+}
+.form-login{
+	width:400px;
+	height:auto;
+	padding:70px 20px 30px 20px;
+	background:url(../images/logo-black.png) no-repeat top rgba(255,255,255,0.8);
+	margin:15% auto 0 auto;
+}
+.error{
+	width:100%;
+	background:rgb(255, 79, 79);
+	color:#fff;
+	padding:10px 0;
+	text-align:center;
+	font-size:15px;
+}
+.master{display:none;}
